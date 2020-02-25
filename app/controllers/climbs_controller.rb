@@ -5,7 +5,7 @@ class ClimbsController < OpenReadController
 
   # GET /climbs
   def index
-    @climbs = Climb.all
+    @climbs = current_user.climbs
 
     render json: @climbs
   end
