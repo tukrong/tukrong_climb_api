@@ -6,11 +6,11 @@ curl "http://localhost:4741/climbs" \
   --header "Content-Type: application/json" \
   --header "Authorization: Token token=${TOKEN}" \
   --data '{
-    "credentials": {
+    "climb": {
       "route_name": "'"${RNAME}"'",
       "route_grade": "'"${RGRADE}"'",
       "number_of_tries": "'"${NUMTRY}"'",
-      "send": "'"${SEND}"'"
+      "did_send": "'"${SEND}"'"
     }
   }'
 

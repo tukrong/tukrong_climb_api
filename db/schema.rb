@@ -19,11 +19,11 @@ ActiveRecord::Schema.define(version: 2020_02_21_165144) do
     t.string "route_name", null: false
     t.string "route_grade", null: false
     t.integer "number_of_tries"
-    t.boolean "send"
-    t.bigint "users_id"
+    t.boolean "did_send"
+    t.bigint "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["users_id"], name: "index_climbs_on_users_id"
+    t.index ["user_id"], name: "index_climbs_on_user_id"
   end
 
   create_table "examples", force: :cascade do |t|
@@ -44,6 +44,6 @@ ActiveRecord::Schema.define(version: 2020_02_21_165144) do
     t.index ["token"], name: "index_users_on_token", unique: true
   end
 
-  add_foreign_key "climbs", "users", column: "users_id"
+  add_foreign_key "climbs", "users"
   add_foreign_key "examples", "users"
 end

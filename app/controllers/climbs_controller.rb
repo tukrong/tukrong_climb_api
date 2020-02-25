@@ -12,7 +12,7 @@ class ClimbsController < OpenReadController
 
   # GET /climbs/1
   def show
-    render json: @climb
+    render json: @climbs
   end
 
   # POST /climbs
@@ -38,6 +38,8 @@ class ClimbsController < OpenReadController
   # DELETE /climbs/1
   def destroy
     @climb.destroy
+
+    head :no_content
   end
 
   private
@@ -50,6 +52,6 @@ class ClimbsController < OpenReadController
   # Only allow a trusted parameter "white list" through.
   def climb_params
     params.require(:climb).permit(:route_name, :route_grade,
-                                  :number_of_tries, :send, :user_id)
+                                  :number_of_tries, :did_send, :user_id)
   end
 end
