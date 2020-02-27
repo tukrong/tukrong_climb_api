@@ -52,6 +52,6 @@ class ClimbsController < OpenReadController
   # Only allow a trusted parameter "white list" through.
   def climb_params
     params.require(:climb).permit(:route_name, :route_grade,
-                                  :number_of_tries, :did_send, :id)
+                                  :number_of_tries, :did_send, :user_id)
   end
 end
