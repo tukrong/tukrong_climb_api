@@ -6,9 +6,3 @@ and belong to user. Users are store.
 
 - [Deployed API](https://tukrong-climb-api.herokuapp.com/climbs)
 - [Deployed Client](https://tukrong.github.io/tukrong_climb_tracker/)
-
-
-### Technologies Used
-
-- Ruby on rails
-- SQL
