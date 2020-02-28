@@ -7,14 +7,23 @@ and belong to user. Users are store.
 - [Deployed API](https://tukrong-climb-api.herokuapp.com/climbs)
 - [Deployed Client](https://tukrong.github.io/tukrong_climb_tracker/)
 
+Github Repo
+
+- Api Repo
+https://github.com/tukrong/tukrong_climb_api
+
+- Front end Repo
+https://github.com/tukrong/tukrong_climb_tracker
+
 ## Planning Story:
 
-- Create my database
-- Create my app
-- Deploy my app
-- Scaffold my resource to reference it to user
+- Create my app.
+- Create my database.
+- Deploy my app.
+- Scaffold my resource to reference it to user.
 - Make sure everything is written correctly.
-- Migrate my database
+- Migrate my database.
+- Make sure I have all my references.
 
 
 ## Technologies Used:
