@@ -6,3 +6,32 @@ and belong to user. Users are store.
 
 - [Deployed API](https://tukrong-climb-api.herokuapp.com/climbs)
 - [Deployed Client](https://tukrong.github.io/tukrong_climb_tracker/)
+
+## Planning Story:
+
+- Create my database
+- Create my app
+- Deploy my app
+- Scaffold my resource to reference it to user
+- Make sure everything is written correctly.
+- Migrate my database
+
+
+## Technologies Used:
+
+- Ruby
+- Ruby on rails
+- Heroku
+- SQL
+
+## Unsolved Problems
+- Make my app more responsive
+
+- I had a 500 error. I originally had my did_send as a boolean and changed it to string. I had to restart and drop all my data
+because I was getting a unknown value pass into did_send. 
+
+- I also had an error trying to update my climbs. I initially just wanted to be able to update a climb 
+using the routes name and not id. I then had to add ID to my serializer and just used an ID to update a climb. I was missing
+an ID reference in the back end. 
+
+
