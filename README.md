@@ -1,6 +1,6 @@
 # Application Title: A Description
 Climb API. Store climb name, climb grade, numbers of tries, did send,
-and belong to user. Users are store.
+and belongs to user. Users are store.
 
 ## Important Links
 
